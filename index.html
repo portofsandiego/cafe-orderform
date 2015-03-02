@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<title>Quality Coast Cafe Menu Order Form</title>
+		<meta charset="utf-8" />
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="includes/css/styles.css">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-latest.js"></script>
+		
+	</head>
+	<body>
+	
+		<div class="container" id="main">
+			<div class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#main">
+							<img alt="Quality Coast" src="images/logo.png">
+						</a>
+					</div><!-- end navbar-header -->
+					<p class="navbar-text">Port of San Diego</p>
+					<div class="dropdown navbar-left">
+						<button class="btn btn-default dropdown-toggle navbar-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							Jump to…
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation" class="dropdown-header">Food</li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#breakfast">Breakfast</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#grabAndGo">Grab and Go</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#sandwiches">Sandwiches</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#dailySpecials">Daily Special Entrées</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#soups">Homemade Soup of the Day</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#pizzas">Personal Pizza, 8-inch</a></li>
+							<li role="presentation" class="dropdown-header">Drinks</li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#drinks">Coffee and Smoothies</a></li>
+							<li role="presentation" class="dropdown-header">ORDER</li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#orderForm">Order form</a></li>
+						</ul><!-- end dropdownMenu1 -->
+						
+					</div><!-- end dropdown -->
+				</div>
+			</div><!-- end navbar -->
+		
+
+			
+			
+			<div class="carousel slide" id="myCarousel">
+			
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+				</ol>
+			
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4>Comfortable dining</h4>
+							<p>Quality Coast is your premiere provider of high quality food.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+					
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>Start your morning the right way.</h4>
+							<p>You know it. Everyone knows it. Your productivity soars after that first cup of delicious, freshly-brewed coffee.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+					
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4>More flavor. Less guilt.</h4>
+							<p>Our food options should satisfy both your palette and your health goals.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+				</div><!-- carousel-inner -->
+				
+				<!-- Controls -->
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+			
+			</div><!-- end myCarousel -->
+			
+			<div class="row" id="foodMenu">
+				<div class="col-lg-12">
+					<h2>Our Menu</h2>
+					
+					<div class="col-lg-12">
+						<h3 class="anchor"><span id="breakfast"></span>Breakfast</h3>
+						<div class="col-md-6">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span class="badge">1.75 (L)</span>
+									<span class="badge">1.25 (S)</span>
+									Variety of pastries &amp; muffins
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.45</span>
+									Classic breakfast sandwich on English muffin with egg/ham/bacon and cheese
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.25 (L)</span>
+									<span class="badge">2.65 (S)</span>
+									House-made granola with milk &amp; fresh fruit <span class="label label-success">V</span> <span class="label label-info">GF</span>
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.25 (L)</span>
+									<span class="badge">2.65 (S)</span>
+									Oatmeal with nuts, dried fruits, and honey <span class="label label-success">V</span> <span class="label label-info">GF</span>
+								</li>
+								<li class="list-group-item">
+									<span class="badge">4.95 (L)</span>
+									<span class="badge">3.65 (S)</span>
+									Fresh seasonal fruit bowl with yogurt or cottage cheese, granola and honey
+								</li>
+								
+							</ul>
+						</div><!-- end col-md-6 (first) -->
+						<div class="col-md-6">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span class="badge">4.85</span>
+									Egg spinach &amp; feta wrap
+								</li>
+								<li class="list-group-item">
+									<span class="badge">5.25</span>
+									Egg, ham, potatoes, chedder cheese, bell peppers, tomatoes, and carmelized onion wrap
+								</li>
+								<li class="list-group-item">
+									<span class="badge">1.75</span>
+									Bagel toasted with cream cheese<br>
+									<span class="badge">0.50</span>
+									&nbsp; + Add tomatoes and jalapeños<br>
+									<span class="badge">1.75</span>
+									&nbsp; + Add lox and capers
+								</li>
+							</ul>
+							
+						</div><!-- end col-md-6 (second) -->
+					</div><!-- end col-lg-12 breakfast -->
+					
+					<div class="col-lg-12">
+						<small><span class="label label-success">V</span> vegan <span class="label label-info">GF</span> gluten-free</small>
+						<hr>
+					</div>
+					
+					<div class="col-lg-12">
+						<h3 class="anchor"><span id="grabAndGo"></span>Grab and Go</h3>
+						<div class="col-md-6">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span class="badge">3.25 (L)</span>
+									<span class="badge">1.50 (S)</span>
+									Water and assorted beverages
+								</li>
+								<li class="list-group-item">
+									<span class="badge">1.75 (L)</span>
+									<span class="badge">1.00 (S)</span>
+									Pre-packaged snack items (baked chips, trail mixes, protein bars)
+								</li>
+								<li class="list-group-item">
+									<span class="badge">4.65</span>
+									Protein box <span class="label label-info">GF</span>
+								</li>
+								<li class="list-group-item">
+									<span class="badge">4.45</span>
+									Veggie box (hummus, veg. pita) <span class="label label-success">V</span> <span class="label label-info">GF</span> (hard-boiled egg, cheese, almonds, sliced apple)
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.65</span>
+									Fresh fruid bowl (seasonal fruit) <span class="label label-success">V</span> <span class="label label-info">GF</span>
+								</li>
+							</ul>
+							
+						</div><!-- end col-md-6 (first) -->
+						<div class="col-md-6">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span class="badge">2.95</span>
+									Mixed green salad (micro greens salad, w/ choice of dressing) <span class="label label-success">V</span> <span class="label label-info">GF</span>
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.45</span>
+									Garden veggie salad <span class="label label-success">V</span> <span class="label label-info">GF</span>
+								</li>
+								<li class="list-group-item">
+									Specialty salads (rotation):<br>
+									<span class="badge">4.75</span>
+									<i class="glyphicon glyphicon-star"></i> Spinach Strawberry, Beet and Feta, Fiesta Salad, Mandarin Asia<br>
+									<br>
+									Grain salads:<br>
+									<span class="badge">4.75</span>
+									<i class="glyphicon glyphicon-star"></i> Quinoa w/ seasonal vegetables  <span class="label label-success">V</span> <span class="label label-info">GF</span><br>
+									<span class="badge">4.75</span>
+									<i class="glyphicon glyphicon-star"></i> Italian Faro salad <span class="label label-success">V</span> <span class="label label-info">GF</span>
+								</li>
+							</ul>
+							
+						</div><!-- end col-md-6 (second) -->
+					</div><!-- end col-lg-12 grabAndGo -->
+					
+					<div class="col-lg-12">
+						<small><span class="label label-success">V</span> vegan <span class="label label-info">GF</span> gluten-free</small>
+						<hr>
+					</div>
+					
+					<div class="col-lg-12">
+						<h3 class="anchor"><span id="sandwiches"></span>Sandwiches</h3>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<span class="badge">5.65</span>
+								<strong>Build your own</strong>— Turkey, ham, roast beef …Your choice of:<br>
+								&nbsp; + Bread (whole grain, sourdough, artisan roll)<br>
+								&nbsp; + Cheese (cheddar, swiss, pepper jack), vegetable, sauce
+							</li>
+							<li class="list-group-item">
+								<span class="badge">5.45</span>
+								Hot French dip with homemade au jus
+							</li>
+							<li class="list-group-item">
+								<span class="badge">6.25</span>
+								Albacore sandwich w/ sprouts &amp; avocado
+							</li>
+						</ul>
+					</div><!-- end col-lg-12 sandwiches -->
+					
+					<div class="col-lg-12">
+						<hr>
+					</div>
+					
+					<div class="col-lg-12">
+						<h3 class="anchor"><span id="dailySpecials"></span>Daily Special Entrées <small>Four-week rotating schedule</small></h3>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<strong>Monday</strong><br>
+								<span class="badge">7.85</span>
+								Moroccan chicken w/ dates and fresh citrus on wild rice
+							<li class="list-group-item">
+								<strong>Tuesday</strong><br>
+								<span class="badge">7.25</span>
+								Cheese enchiladas topped w/ fresh Mexican vegetables &amp; black beans <span class="label label-success">V</span> <span class="label label-info">GF</span>
+							</li>
+							<li class="list-group-item">
+								<strong>Wednesday</strong><br>
+								<span class="badge">7.45</span>
+								Roast pork w/ winter roasted vegetable entrée <span class="label label-success">V</span> <span class="label label-info">GF</span>
+							</li>
+							<li class="list-group-item">
+								<strong>Thursday</strong><br>
+								<span class="badge">7.25</span>
+								Tuscan lasagna w/ side salad
+							</li>
+							<li class="list-group-item">
+								<strong>Friday</strong><br>
+								<span class="badge">7.95</span>
+								Glazed salmon w/ spinach cous cous &amp; small green salad
+							</li>
+						</ul>
+					</div><!-- end col-lg-12 dailySpecials -->
+					
+					<div class="col-lg-12">
+						<small><span class="label label-success">V</span> vegan <span class="label label-info">GF</span> gluten-free</small>
+						<hr>
+					</div>
+					
+					<div class="col-lg-12">
+						<h3 class="anchor"><span id="soups"></span>Homemade Soup of the Day</h3>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<strong>Monday</strong><br>
+								<span class="badge">4.25 (bowl)</span>
+								<span class="badge">3.25 (cup)</span>
+								Cream of broccoli <span class="label label-success">V</span> <span class="label label-info">GF</span>
+							<li class="list-group-item">
+								<strong>Tuesday</strong><br>
+								<span class="badge">4.25 (bowl)</span>
+								<span class="badge">3.25 (cup)</span>
+								Lentil with bacon <span class="label label-success">V</span> <span class="label label-info">GF</span>
+							</li>
+							<li class="list-group-item">
+								<strong>Wednesday</strong><br>
+								<span class="badge">4.25 (bowl)</span>
+								<span class="badge">3.25 (cup)</span>
+								Roasted potato <span class="label label-success">V</span> <span class="label label-info">GF</span>
+							</li>
+							<li class="list-group-item">
+								<strong>Thursday</strong><br>
+								<span class="badge">4.25 (bowl)</span>
+								<span class="badge">3.25 (cup)</span>
+								Minestrone <span class="label label-success">V</span>
+							</li>
+							<li class="list-group-item">
+								<strong>Friday</strong><br>
+								<span class="badge">4.25 (bowl)</span>
+								<span class="badge">3.25 (cup)</span>
+								Chicken tortilla soup <span class="label label-info">GF</span>
+							</li>
+							<li class="list-group-item">
+								Cream soups served in optional bread bowl<br>
+								<span class="badge">8.25 (cup)</span>
+								Any day cup of soup and sandwich special (choose any build-your-own sandwich and add a cup of soup)
+							</li>
+						</ul>
+					</div><!-- end col-lg-12 soups -->
+					
+					<div class="col-lg-12">
+						<small><span class="label label-success">V</span> vegan <span class="label label-info">GF</span> gluten-free</small>
+						<hr>
+					</div>
+					
+					<div class="col-lg-12">
+						<h3 class="anchor"><span id="pizzas"></span>Personal Pizza, 8-inch</h3>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<span class="badge">5.25</span>
+								Daily pizza special (weekly rotation)
+							</li>
+							<li class="list-group-item">
+								<span class="badge">5.25</span>
+								Margarita pizza
+							</li>
+							<li class="list-group-item">
+								<span class="badge">5.25</span>
+								BBQ chicken
+							</li>
+							<li class="list-group-item">
+								<span class="badge">5.25</span>
+								Fig, feta, and carmelized onion
+							</li>
+						</ul>
+					</div><!-- end col-lg-12 pizzas -->
+					
+					<div class="col-lg-12">
+						<hr>
+					</div>
+					
+					<div class="col-lg-12">
+						<h3 class="anchor"><span id="drinks"></span>Drinks</h3>
+						<p>Homemade flavored creamer, soy milk, skim milk, whole milk, and almond milk options available upon request. <span class="label label-success">V</span> <span class="label label-info">GF</span> available.</p>
+						<p>All items prepared in a commercial kitchen where wheat, nuts, and other food allergens may be present.</p>
+						<h4>Full espresso bar <small>Iced and hot beverages</small></h4>
+						<div class="col-md-6">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span class="badge">1.85 (16oz)</span>
+									<span class="badge">1.25 (12oz)</span>
+									Brewed coffee
+								</li>
+								<li class="list-group-item">
+									<span class="badge">2.20 (20oz)</span>
+									<span class="badge">1.85 (16oz)</span>
+									Iced coffee
+								</li>
+								<li class="list-group-item">
+									<span class="badge">2.95 (20oz)</span>
+									<span class="badge">2.35 (16oz)</span>
+									Shaken iced tea
+								</li>
+								<li class="list-group-item">
+									<span class="badge">2.00 (16oz)</span>
+									<span class="badge">1.75 (12oz)</span>
+									Brewed tea
+								</li>
+								<li class="list-group-item">
+									<span class="badge">2.45 (16oz)</span>
+									<span class="badge">1.85 (12oz)</span>
+									Americano
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.25 (16oz)</span>
+									<span class="badge">2.50 (12oz)</span>
+									Cappucino
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.25 (16oz)</span>
+									<span class="badge">2.50 (12oz)</span>
+									Latte
+								</li>
+							</ul>
+						</div><!-- end col-md-6 (first) -->
+						<div class="col-md-6">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span class="badge">2.45 (16oz)</span>
+									<span class="badge">1.85 (12oz)</span>
+									Macchiato
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.95 (16oz)</span>
+									<span class="badge">3.10 (12oz)</span>
+									Mocha
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.95 (16oz)</span>
+									<span class="badge">3.10 (12oz)</span>
+									White mocha
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.95 (16oz)</span>
+									<span class="badge">3.10 (12oz)</span>
+									Mexican mocha
+								</li>
+								<li class="list-group-item">
+									<span class="badge">3.95 (20oz)</span>
+									<span class="badge">3.25 (16oz)</span>
+									Coffee frappe
+								</li>
+								<li class="list-group-item">
+									<span class="badge">4.25 (20oz)</span>
+									<span class="badge">3.45 (16oz)</span>
+									Mocha frappe
+								</li>
+								<li class="list-group-item">
+									<span class="badge">4.25 (20oz)</span>
+									<span class="badge">3.45 (16oz)</span>
+									Vanilla frappe
+								</li>
+							</ul>
+						</div><!-- end col-md-6 (second) -->
+						
+						<h4>Fresh smoothies</h4>
+						
+						<div class="col-md-12">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<span class="badge">4.75 (20oz)</span>
+									<span class="badge">3.65 (16oz)</span>
+									Strawberry banana
+								</li>
+								<li class="list-group-item">
+									<span class="badge">4.75 (20oz)</span>
+									<span class="badge">3.65 (16oz)</span>
+									Peach paradise
+								</li>
+								<li class="list-group-item">
+									<span class="badge">4.75 (20oz)</span>
+									<span class="badge">3.65 (16oz)</span>
+									Berry berry
+								</li>
+							</ul>
+						</div><!-- end col-md-12 -->
+						
+					</div><!-- end col-lg-12 drinks -->
+					
+				</div><!-- end col-lg-12 -->
+			</div><!-- end foodMenu -->
+			
+			
+			<div class="row" id="bigCallout">
+				<div class="col-lg-12">
+					
+					<div class="alert alert-success alert-block fade in" id="successAlert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						
+						<h4>Success!</h4>
+						<p>You just made this element display by using jQuery. Click the "x" in the top right corner to close this bad boy.</p>
+					</div><!-- end alert -->
+					
+					<!-- Visible only on small devices -->
+					<div class="well well-small visible-sm">
+						<a href="tel:+16195551234" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+					</div><!-- end well-small -->
+					
+					<div class="well anchor">
+						<span id="orderForm"></span>
+						<div class="page-header">
+							<h1>Cafe Order Form <small>Simple. Because hunger can’t wait.</small></h1>
+						</div><!-- end page-header -->
+						
+						<p class="lead">Introduction and other info. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						
+						<a href="" class="btn btn-large btn-primary" id="alertMe">Tap a button</a>
+						<a href="" class="btn btn-large btn-link">or a secondary link</a>
+					</div><!-- end well -->
+					
+				</div><!-- end col-lg-12 -->
+			</div><!-- end bigCallout -->
+			
+		</div><!-- end container -->
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-sm-4">
+						<h6>About Us</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div><!-- end col-sm-6 -->
+					
+					<div class="col-sm-2">
+						<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<!-- <li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li> -->
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-2">
+						<h6>Follow Us</h6>
+						<ul class="unstyled">
+							<li><i class="fa fa-twitter"></i> <a href="https://twitter.com/qualitycoast">Twitter</a></li>
+							<li><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:info@qualitycoast.com">Email</a></li>
+							<li><i class="glyphicon glyphicon-globe"></i> <a href="http://www.qualitycoast.com/">Website</a></li>
+							<!-- <li><a href="#">Google Plus</a></li> -->
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-2">
+						<h6>Designed and coded with <span class="glyphicon glyphicon-heart"></span> by the Marketing &amp; Communications Digital Innovation Team</h6>
+						
+						<button type="button" class="btn btn-primary">
+							<h5><strong><em>MARCOM</em></strong> <i class="fa fa-paint-brush"></i><i class="fa fa-code"></i></h5>
+							<small>Port of San Diego</small>
+						</button>
+						<h3><i class="fa fa-html5"></i> <i class="fa fa-css3"></i></h3>
+					</div><!-- end col-sm-2 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</footer>
+	
+
+	<!-- Bottom placement for loading performance -->
+		
+	<!-- Online first -->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.11.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
