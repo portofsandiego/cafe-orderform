@@ -73,6 +73,10 @@ h3.anchor span, div.anchor span {
 	top: -65px;
 }
 
+.navbar-default {
+	background-color: #F6F3EB;
+}
+
 /* --------------------------------------
    Carousel
    -------------------------------------- */
@@ -152,6 +156,9 @@ h3.anchor span, div.anchor span {
 	margin-right: 5px;
 }
 
+li.list-group-item {
+	background-color: #F6F3EB;
+}
 
 /* --------------------------------------
    Media Queries
