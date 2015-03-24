@@ -1,0 +1,25 @@
+{
+  "name": "cafe-orderform",
+  "version": "1.0.0",
+  "description": "Simple cafe menu with dreams of becoming a dynamic ordering system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/portofsandiego/cafe-orderform.git"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "Glenn Batuyong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/portofsandiego/cafe-orderform/issues"
+  },
+  "homepage": "https://github.com/portofsandiego/cafe-orderform",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
