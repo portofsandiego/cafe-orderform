@@ -1,6 +1,6 @@
-.*/
-.DS_Store
-_site/
 node_modules
-data/*
+dist
+.tmp
+bower_components
 *.psd
+.DS_Store

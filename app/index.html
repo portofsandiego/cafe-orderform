@@ -4,25 +4,34 @@
 	<head>
 		
 		<title>The Coast Cafe Menu</title>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
 				
 		<!-- Mobile viewport optimized -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		
-		<!-- Bootstrap CSS -->
-		<!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <!-- endbuild -->
 		
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="includes/css/styles.css">
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
 		
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-latest.js"></script>
+		<link rel="stylesheet" href="styles/styles.css">
+		
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
 		
 	</head>
 	<body>
+	    <!--[if lt IE 10]>
+	      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	    <![endif]-->
 	
 		<div class="container" id="main">
 			<div class="navbar navbar-default navbar-fixed-top">
@@ -252,12 +261,16 @@
 					</div>
 					
 					<div class="col-lg-12">
-						<h3 class="anchor"><span id="salads"></span>Salads</h3>
+						<h3 class="anchor"><span id="salads"></span>Salads <small>Build your own!</small></h3>
 						<ul class="list-group">
 							<li class="list-group-item">
-								
+								<strong>Base:</strong><br>
 								<span class="badge">5.65</span>
-								Build your own<br>
+								Spring Mix, Mixed Greens, or Spinach<br>
+								
+								Veggies &amp; more:<br>
+								+ Tomato, onion, pepperonicini, cucumber, olives, bell pepper, strawberry, egg<br>
+								
 								<span class="badge">+ 0.75</span>
 								&nbsp; + Add protein<br>
 								<span class="badge">+ 0.50</span>
@@ -519,17 +532,27 @@
 
 	<!-- Bottom placement for loading performance -->
 		
-	<!-- Online first -->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.11.2.min.js"><\/script>')</script>
-	
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- Bootstrap JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	
-	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="bower_components/bootstrap/js/affix.js"></script>
+    <script src="bower_components/bootstrap/js/alert.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/bootstrap/js/modal.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <script src="bower_components/bootstrap/js/button.js"></script>
+    <script src="bower_components/bootstrap/js/popover.js"></script>
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 	
 	</body>
 </html>
